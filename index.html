@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <style>
+      #content-frame {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 80vh;
+        border: none;
+        display: none;
+        z-index: 100;
+      }
+      #frame-close {
+        position: fixed;
+        right: 11vw;
+        top: 11vh;
+        padding: 10px 20px;
+        background: rgba(255,255,255,0.9);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+        z-index: 101;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="content-frame"></iframe>
+    <button id="frame-close">關閉</button>
+    <script src="sketch.js"></script>
+    <script src="color_settings.js"></script>
+  </body>
+</html>
